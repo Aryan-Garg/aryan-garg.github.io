@@ -84,7 +84,7 @@
       </td> -->
       
       <canvas id="myCanvas" width="800" height="400"></canvas>
-          <script>
+      <script>
           var creal = -.8
           var cimag = .156;
           var canvas = document.getElementById('myCanvas');
@@ -112,11 +112,11 @@
                                           }
                                   while ((cx*cx+cy*cy<4)&&i<25);
                                         
-                                  //i=i.toString(16); - commented out since not needed in this version
-                                  context.beginPath();
-                                  context.rect(x*4, y*4, 4, 4);
-                                  context.fillStyle = pallette[i];
-                                  context.fill();
+                                    //i=i.toString(16); - commented out since not needed in this version
+                                    context.beginPath();
+                                    context.rect(x*4, y*2, 4, 2);
+                                    context.fillStyle = pallette[i];
+                                    context.fill();
                                   }
                           }
                   frame++;
@@ -124,7 +124,7 @@
                   cimag=.156+.4*Math.cos(frame/(3.14*40));
                         
           }
-          
+
           for(x=0;x<9;x++) // this loop populates the color pallette array
                   {
                   color=(31*x).toString(16); // convert the number to hex
@@ -134,7 +134,7 @@
                   pallette[17+x]="#"+color+'0000';  // colors 17-25: the Red component changes, Green and Blue=0
                   }
                 
-          a=setInterval(julia,100);
+          a=setInterval(julia,50);
                 
           </script>
 
@@ -145,7 +145,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Website template <s>shamelessly</s> stolen from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>. 
+                  Website template was <s>shamelessly</s> stolen from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>. 
                 </p>
               </td>
             </tr>
