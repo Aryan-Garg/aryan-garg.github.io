@@ -82,123 +82,48 @@
         </script>
       </td>
       
-      <canvas id="cvs" width="400" height="400"></canvas>
-        <script>
-          function hsvToRgb(h, s, v) {
-          	var r, g, b;
-          	var i;
-          	var f, p, q, t;
+      <canvas id="cvs" width="800" height="400"></canvas>
+      <script>
+          var creal = -.8
+          var cimag = .156;
+          var canvas = document.getElementById('myCanvas');
+          var context = canvas.getContext('2d');
+          var frame = 0; // new variable to track the current frame number
           
-          	// Make sure our arguments stay in-range
-          	h = Math.max(0, Math.min(360, h));
-          	s = Math.max(0, Math.min(100, s));
-          	v = Math.max(0, Math.min(100, v));
-          
-          	// We accept saturation and value arguments from 0 to 100 because that's
-          	// how Photoshop represents those values. Internally, however, the
-          	// saturation and value are calculated from a range of 0 to 1. We make
-          	// That conversion here.
-          	s /= 100;
-          	v /= 100;
-          
-          	if(s == 0) {
-          		// Achromatic (grey)
-          		r = g = b = v;
-          		return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
-          	}
-          
-          	h /= 60; // sector 0 to 5
-          	i = Math.floor(h);
-          	f = h - i; // factorial part of h
-          	p = v * (1 - s);
-          	q = v * (1 - s * f);
-          	t = v * (1 - s * (1 - f));
-          
-          	switch(i) {
-          		case 0:
-          			r = v;
-          			g = t;
-          			b = p;
-          			break;
-            
-          		case 1:
-          			r = q;
-          			g = v;
-          			b = p;
-          			break;
-            
-          		case 2:
-          			r = p;
-          			g = v;
-          			b = t;
-          			break;
-            
-          		case 3:
-          			r = p;
-          			g = q;
-          			b = v;
-          			break;
-            
-          		case 4:
-          			r = t;
-          			g = p;
-          			b = v;
-          			break;
-            
-          		default: // case 5:
-          			r = v;
-          			g = p;
-          			b = q;
-          	}
-          
-          	return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
-          }
-          var cvs = document.getElementById("cvs");
-          cvs.height = cvs.width = 400;
-
-          function iterate(x, y, cr, ci){
-            var x0 = x, y0 = y;
-            // z^2 + c
-            var rad = 4;
-            var it = 1000;
-            var xtemp;
-            var i;
-            for (i = 1; i < it; i++){
-              xtemp = x0 * x0 - y0 * y0 + cr;
-              y0 = 2 * x0 * y0 + ci;
-              x0 = xtemp;
-            
-              if (x0 * x0 + y0 * y0 >= rad){
-                break;
-              }
-            }
-            return i / it;
+          function julia() // the program drawing the fractal
+          {                // is now a function so that it can be called periodically
+                  for(y=0;y<200;y++)
+                          {
+                          for(x=0;x<200;x++)
+                                  {
+                                  var cx=-2+x/50;
+                                  var cy=-2+y/50;
+                                  var i = 0;
+                                  
+                                  do
+                                          {
+                                          xt=cx*cx-cy*cy+creal;
+                                          cy=2*cx*cy+cimag;
+                                          cx=xt;
+                                          i++;
+                                          }
+                                  while ((cx*cx+cy*cy<4)&&i<25);
+                                        
+                                  i=i.toString(16);
+                                  context.beginPath();
+                                  context.rect(x*4, y*4, 4, 4);
+                                  context.fillStyle ='#'+i+i+i;
+                                  context.fill();
+                                  }
+                          }
+                  frame++;        // increase the number of the frame
+                  creal=-.8+.6*Math.sin(frame/(3.14*20));    // calculate the new coordinates
+                  cimag=.156+.4*Math.cos(frame/(3.14*40));   // of the c point
           }
 
-          var context = cvs.getContext('2d');
-          data = context.getImageData(0, 0, cvs.width, cvs.height);
-          pixels = data.data;
+          a=setInterval(julia,100); //redraw the fractal every 100ms
 
-          var cr = 0.285, ci = 0.01;
-
-          for (var x = 0; x < cvs.width; x++){
-            for (var y = 0; y < cvs.height; y++){
-              var cx = (x - cvs.width / 2) * 2 / cvs.width;
-              var cy = (y - cvs.height / 2) * 2 / cvs.height;
-            
-              var value = Math.sqrt(iterate(cx, cy, cr, ci));
-              var pixel = hsvToRgb(Math.round(360 * value), 50, 50);
-            
-              for (var i = 0; i < 3; i++){
-                pixels[(y * cvs.width + x) * 4 + i] = pixel[i];
-              }
-              pixels[(y * cvs.width + x) * 4 + 3] = 255;
-            }
-          }
-          data.data = pixels;
-          context.putImageData(data, 0, 0);
-        </script>
-
+      </script>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
