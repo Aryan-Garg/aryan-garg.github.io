@@ -1,1 +1,1 @@
-Aryan Garg
+Personal Website of Aryan Garg
