@@ -98,6 +98,43 @@
 		
 	 <h2 id="pubs" style="left-padding:20px;width:100%;vertical-align:middle">Publications</h2>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		  <!-- 		  Insert new papers after this line -->
+		<tr onmouseout="gpecnet_stop()" onmouseover="gpecnet_start()" bgcolor="#ffffd0">
+			<td style="padding:20px;width:25%;vertical-align:middle">
+				<div class="one">
+					<div class="two" id='dplfvr'><img src='images/sample_1.png' width="160" height="146"></div>
+					<img src='images/sample_1.png' width="160" height="146">
+				</div>
+				<script type="text/javascript">
+					function dplfvr_start() {
+						document.getElementById('dplfvr').style.opacity = "1";
+					}
+					function dplfvr_stop() {
+						document.getElementById('dplfvr').style.opacity = "0";
+					}
+					dplfvr_stop()
+				</script>
+			</td>
+			<td style="padding:20px;width:75%;vertical-align:middle">
+				<span class="papertitle">Stereo-Knowledge Distillation from *dp*MV to Dual Pixels for Light Field Video Reconstruction</span>
+
+				<br>
+				<strong>Aryan Garg</strong>, Raghav Mallampali, Akshat Joshi, <a href="">Shrisudhan Govindarajan</a>, <a href="">Kaushik Mitra</a>
+				<br>
+				<em>ICCP</em>, 2024
+				<br>
+				<a href="https://github.com/Aryan-Garg/dp-LFVR">GitHub</a>
+				/
+<!-- 				<a href="https://arxiv.org/abs/2210.09846">arXiv</a> -->
+				/
+<!-- 				<a href="https://openreview.net/forum?id=wSWk1sNK0m">OpenReview</a> -->
+				<p></p>
+				<p>
+					Stereo Knowledge Distillation to dp-networks for disparity estimation, dpMV dataset, and LFVR. 
+				</p>
+              </td>
+            </tr>
+		  
 		  <tr onmouseout="darkflash_stop()" onmouseover="darkflash_start()" bgcolor="#ffffd0">
 			  <td style="padding:20px;width:25%;vertical-align:middle">
 				  <div class="one">
@@ -148,7 +185,7 @@
                   function gpecnet_stop() {
                     document.getElementById('gpecnet').style.opacity = "0";
                   }
-                  darkflash_stop()
+                  gpecnet_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
