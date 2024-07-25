@@ -138,6 +138,11 @@ body {
   border-radius: 5px;
 }
 
+.tonemapping-image {
+  width: 150%;
+  border-radius: 5px;
+}
+
 .interpolation-video-column {
 }
 
