@@ -74,10 +74,7 @@ a:hover {
   text-decoration: none;
 }
 
-body {
-  background-image: 'images/church.jpg';
-}
-
+body,
 td,
 th,
 tr,
@@ -137,10 +134,11 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-/* #bannerimage {
-  width: 100%;
-  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
-  height: 405px;
-  background-color: purple;
-  background-position: center;
-} */
+html {
+  min-height: 100%;
+  background-image: url("images/church.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
