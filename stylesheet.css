@@ -75,7 +75,7 @@ a:hover {
 }
 
 body {
-  background-image: url('images/church.jpg');
+  background-image: 'images/church.jpg';
 }
 
 td,
