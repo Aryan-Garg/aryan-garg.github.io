@@ -134,11 +134,11 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-html {
+/* html {
   min-height: 100%;
   background-image: url("/images/church.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-}
+} */
