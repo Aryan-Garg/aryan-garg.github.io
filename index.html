@@ -110,7 +110,42 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 		  <!-- 		  Insert new papers after this line -->
-		  
+		  <tr onmouseout="cgui_start()" onmouseover="cgui_end()">
+			<td style="padding:20px;width:25%;vertical-align:middle">
+				<div class="one">
+					<div class="two" id='cgui'><img src='images/cgui.png' width="160" height="125"></div>
+					<img src='images/cgui.png' width="170" height="125">
+				</div>
+				<script type="text/javascript">
+					function cgui_start() {
+						document.getElementById('cgui').style.opacity = "1";
+					}
+					function cgui_end() {
+						document.getElementById('cgui').style.opacity = "0";
+					}
+					cgui_stop()
+				</script>
+			</td>
+			<td style="padding:20px;width:75%;vertical-align:middle">
+				<a href="https://arxiv.org/abs/2407.16503">
+				<span class="papertitle">Controllable GUI Exploration</span>
+				</a>
+				<br>
+				<strong>Aryan Garg</strong>, <a href="">Yue Jiang</a>, <a href="">Antti Oulasvirta</a>
+				<br>
+				<em>Preprint, 2025</em> &nbsp 
+				<br>
+<!-- 				<a href="https://aryan-garg.github.io/hdrsplat">Project Page</a>
+				/  -->
+	            <a href="https://arxiv.org/abs/2502.03330">arXiv</a>
+<!-- 				/ -->
+<!-- 				<a href="https://openreview.net/forum?id=wSWk1sNK0m">OpenReview</a> -->
+				<p></p>
+				<p>
+					Diffusion for automatic GUI designing & ideation
+				</p>
+              </td>
+            </tr>
 		  <tr onmouseout="ipdiff_start()" onmouseover="ipdiff_end()">
 			<td style="padding:20px;width:25%;vertical-align:middle">
 				<div class="one">
