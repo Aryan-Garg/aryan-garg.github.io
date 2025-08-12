@@ -113,6 +113,43 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 		  <!-- 		  Insert new papers after this line -->
+		<tr onmouseout="qrf_start()" onmouseover="qrf_end()">
+			<td style="padding:20px;width:25%;vertical-align:middle">
+				<div class="one">
+					<div class="two" id='qrf'><img src='images/qrf.png' width="160" height="125"></div>
+					<img src='images/qrf.png' width="170" height="125">
+				</div>
+				<script type="text/javascript">
+					function qrf_start() {
+						document.getElementById('qrf').style.opacity = "1";
+					}
+					function qrf_end() {
+						document.getElementById('qrf').style.opacity = "0";
+					}
+					cgui_stop()
+				</script>
+			</td>
+			<td style="padding:20px;width:75%;vertical-align:middle">
+				<a href="https://arxiv.org/abs/2407.16503">
+				<span class="papertitle">Radiance Fields from Photons</span>
+				</a>
+				<br>
+				<a href="https://scholar.google.com/citations?user=-ZU_byQAAAAJ&hl=en">Sacha Jungerman</a>, <strong>Aryan Garg</strong>, <a href="https://wisionlab.com/people/mohit-gupta/">Mohit Gupta</a>,
+				<br>
+				<em>ToG, 2025</em> &nbsp 
+				<br>
+<!-- 				<a href="https://aryan-garg.github.io/hdrsplat">Project Page</a>
+				/  -->
+	            <a href="https://arxiv.org/abs/2407.09386">arXiv</a>
+<!-- 				/ -->
+<!-- 				<a href="https://openreview.net/forum?id=wSWk1sNK0m">OpenReview</a> -->
+				<p></p>
+				<p>
+					NeRFs and 3D Gaussian Splatting with Photons
+				</p>
+              </td>
+        </tr>
+			  
 		  <tr onmouseout="cgui_start()" onmouseover="cgui_end()">
 			<td style="padding:20px;width:25%;vertical-align:middle">
 				<div class="one">
