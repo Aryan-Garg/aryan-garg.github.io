@@ -109,6 +109,14 @@ h2 {
   font-size: 32px;
 }
 
+.subtitle {
+  text-align: center;
+  color: #777;
+  font-size: 0.95em;
+  margin-top: -8px;
+  margin-bottom: 14px;
+}
+
 .one {
   width: 160px;
   height: 160px;
