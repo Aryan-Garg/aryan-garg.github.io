@@ -260,12 +260,12 @@
         <div class="content has-text-justified">
           <p>
             Capturing high-quality images from only a few detected photons is a fundamental challenge in computational imaging. 
-            Single-photon avalanche diode (SPAD) sensors promise high-quality imaging in regimes where conventional cameras fail, but raw *quanta frames* contain only sparse, noisy, binary photon detections. 
+            Single-photon avalanche diode (SPAD) sensors promise high-quality imaging in regimes where conventional cameras fail, but raw <emph>quanta frames</emph> contain only sparse, noisy, binary photon detections. 
             Recovering a coherent image from a burst of such frames requires handling alignment, denoising, and demosaicing (for color) under noise statistics far outside those assumed by standard restoration pipelines or modern generative models. 
             We present an approach that adapts large text-to-image latent diffusion models to the photon-limited domain of quanta burst imaging. 
             Our method leverages the structural and semantic priors of internet-scale diffusion models while introducing mechanisms to handle Bernoulli photon statistics. 
             By integrating latent-space restoration with burst-level spatio-temporal reasoning, our approach produces reconstructions that are both photometrically faithful and perceptually pleasing, even under high-speed motion. 
-            We evaluate the method on synthetic benchmarks and new real-world datasets, including the *first color SPAD burst dataset* and a challenging *eXtreme Deformable (XD)* video benchmark. 
+            We evaluate the method on synthetic benchmarks and new real-world datasets, including the <b>first color SPAD burst dataset</b> and a challenging <b>eXtreme Deformable (XD) video benchmark</b>. 
             Across all settings, the approach substantially improves perceptual quality over classical and modern learning-based baselines, demonstrating the promise of adapting large generative priors to extreme photon-limited sensing.
           </p>
         </div>
@@ -296,9 +296,9 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Depth from 3D</h2>
+          <h2 class="title is-3">Reconstructions at Over 100k fps!</h2>
           <p>
-            Using HDRSplat, you can get accurate depth, even at night!
+            Using gQIR, you can get high perceptually quality and plausible reconstructions under extreme motion caused photon starvation!
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/supplementary/NVS_depths/depth_CandleFiat_vitB.mp4"
@@ -319,15 +319,15 @@
     <div class="columns is-centered">
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Custom Tonemapping</h2>
+        <h2 class="title is-3">Prompts For Semantic Editing of Photons</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our raw-space optimization, we can also solve the tonemapping and exposure problem.
+              As a byproduct of our base generative prior, we can also use natural language to guide reconstruction in ambiguous regions.
             </p>
             <img src="./static/supplementary/applications-2ffff.jpg"
                  class="tonemapping-image"
-                 alt="Custom Tonemapping and Exposure Control."/>
+                 alt="Prompt Guided Semantic Photon Editing."/>
           </div>
 
         </div>
@@ -383,7 +383,7 @@
         <div class="content has-text-justified">
         </div>
         <div class="content has-text-centered">
-          <img src="./static/pipeline.png" alt="model_architecture" class="interpolation-image">
+          <img src="./static/supplementary/pipeline.png" alt="model_architecture" class="interpolation-image">
         </div>
         <!--/ Re-rendering. -->
 
@@ -446,14 +446,8 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
+            Website Template Credits: Nerfies <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>
           </p>
         </div>
       </div>
