@@ -32,11 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-
-  <link rel="apple-touch-icon" sizes="180x180" href=".static/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href=".static/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href=".static/images/favicon-16x16.png">
-  <link rel="manifest" href=".static/images/site.webmanifest">
+  <link rel="icon" href=".static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -260,11 +256,11 @@
           <p>
             Capturing high-quality images from only a few detected photons is a fundamental challenge in computational imaging. 
             Single-photon avalanche diode (SPAD) sensors promise high-quality imaging in regimes where conventional cameras fail, but raw <emph>quanta frames</emph> contain only sparse, noisy, binary photon detections. 
-            Recovering a coherent image from a burst of such frames requires handling alignment, denoising, and demosaicing (for color) under noise statistics far outside those assumed by standard restoration pipelines or modern generative models. 
+            Recovering a coherent image from a burst of such frames requires handling alignment, denoising, and demosaicing under noise statistics far outside those assumed by standard restoration pipelines or modern generative models. 
             We present an approach that adapts large text-to-image latent diffusion models to the photon-limited domain of quanta burst imaging. 
             Our method leverages the structural and semantic priors of internet-scale diffusion models while introducing mechanisms to handle Bernoulli photon statistics. 
             By integrating latent-space restoration with burst-level spatio-temporal reasoning, our approach produces reconstructions that are both photometrically faithful and perceptually pleasing, even under high-speed motion. 
-            We evaluate the method on synthetic benchmarks and new real-world datasets, including the <b>first color SPAD burst dataset</b> and a challenging <b>eXtreme Deformable (XD) video benchmark</b>. 
+            We evaluate the method on synthetic benchmarks and new real-world datasets, including the <b>first color SPAD dataset</b> and a challenging <b>eXtreme Deformable (XD) video benchmark</b>. 
             Across all settings, the approach substantially improves perceptual quality over classical and modern learning-based baselines, demonstrating the promise of adapting large generative priors to extreme photon-limited sensing.
           </p>
         </div>
