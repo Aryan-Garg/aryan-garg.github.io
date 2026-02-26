@@ -255,11 +255,11 @@
         <div class="content has-text-justified">
           <p>
             Capturing high-quality images from only a few detected photons is a fundamental challenge in computational imaging. 
-            Single-photon avalanche diode (SPAD) sensors promise high-quality imaging in regimes where conventional cameras fail, but raw <emph>quanta frames</emph> contain only sparse, noisy, binary photon detections. 
+            Single-photon avalanche diodes (SPADs) promise high-quality imaging in regimes where conventional cameras fail, but raw <emph>quanta frames</emph> contain only sparse, noisy, binary photon detections. 
             Recovering a coherent image from a burst of such frames requires handling alignment, denoising, and demosaicing under noise statistics far outside those assumed by standard restoration pipelines or modern generative models. 
             We present an approach that adapts large text-to-image latent diffusion models to the photon-limited domain of quanta burst imaging. 
             Our method leverages the structural and semantic priors of internet-scale diffusion models while introducing mechanisms to handle Bernoulli photon statistics. 
-            By integrating latent-space restoration with burst-level spatio-temporal reasoning, our approach produces reconstructions that are both photometrically faithful and perceptually pleasing, even under high-speed motion. 
+            By integrating latent-space restoration with burst-level spatio-temporal reasoning, our approach produces reconstructions that are both photometrically faithful and perceptually pleasing, even under extreme motion. 
             We evaluate the method on synthetic benchmarks and new real-world datasets, including the <b>first color SPAD dataset</b> and a challenging <b>eXtreme Deformable (XD) video benchmark</b>. 
             Across all settings, the approach substantially improves perceptual quality over classical and modern learning-based baselines, demonstrating the promise of adapting large generative priors to extreme photon-limited sensing.
           </p>
