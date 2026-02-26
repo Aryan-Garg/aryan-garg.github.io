@@ -292,13 +292,13 @@
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
-
+ 
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Reconstructions at Over 100k fps!</h2>
+          <h2 class="title is-3">Extreme Motion Imaging Unlocked!</h2>
           <p>
-            Using gQIR, you can get high perceptually quality and plausible reconstructions under extreme motion caused photon starvation!
+            gQIR enables high perceptually quality and plausibility of reconstructions under extreme motion!
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/supplementary/NVS_depths/depth_CandleFiat_vitB.mp4"
@@ -332,6 +332,21 @@
 
         </div>
       </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column">
+          <div class="content">
+            <h2 class="title is-3">gQIR's Architecture</h2>
+            <p>
+              As shown, gQIR is built in 3 stages: a) <b>Simultaneous Pre-degradation Removal and SPAD-Alignment</b>, b) 
+              Adversarial distillation of SD2.1-zsnr-L5 for <b>perceptual enhancement</b>, and c) <b>Burst extension</b> for higher fidelity using our hybrid-3D FusionViT
+            </p>
+            <div class="content has-text-centered">
+              <img src="./static/supplementary/pipeline.png" alt="model_architecture" class="interpolation-image">
+            </div>
+          </div>
+        </div>
     </div>
     <!--/ Matting. -->
 
@@ -375,16 +390,7 @@
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">gQIR's Architecture</h3>
-        <p>
-          As shown, gQIR is built in 3 stages: a) <b>Simultaneous Pre-degradation Removal and SPAD-Alignment</b>, b) 
-          Adversarial distillation of SD2.1-zsnr-L5 for <b>perceptual enhancement</b>, and c) <b>Burst extension</b> for higher fidelity using our hybrid-3D FusionViT
-        </p>
-        <div class="content has-text-justified">
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/supplementary/pipeline.png" alt="model_architecture" class="interpolation-image">
-        </div>
+        
         <!--/ Re-rendering. -->
 
       <!-- </div>
