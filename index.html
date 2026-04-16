@@ -124,9 +124,9 @@
       </div>
 
       <!-- Publications Section -->
-      <div class="terminal-window section" id="publications" style="display:none;">
+      <div class="terminal-window section" id="publications">
         <div class="terminal-header">
-          <span class="terminal-title">aryan@portfolio:~/publications</span>
+          <span class="terminal-title">aryan@portfolio:~/publications/{CVPR, SIGGRAPH, ICLR, ToG, ICCP, BMVC, WACV}</span>
           <div class="terminal-buttons">
             <button class="terminal-btn close" onclick="hideSection('publications')"></button>
             <button class="terminal-btn minimize"></button>
@@ -135,7 +135,6 @@
         </div>
         <div class="terminal-content">
           <h2>Publications</h2>
-          
           <div class="publication" onclick="togglePublication(this)">
             <div class="publication-header">
               <div>
@@ -589,8 +588,8 @@
         speech.classList.add('visible');
         setTimeout(() => {
           speech.classList.remove('visible');
-        }, 6000);
-      }, 3000);
+        }, 6500);
+      }, 3500);
       
       // Motorcycle Loading Screen Animation
       window.addEventListener('load', () => {
@@ -614,12 +613,12 @@
             }
           }, 60);
           
-          // When motorcycle passes center (~1250ms), trigger rip
+          // When motorcycle passes center, trigger rip
           setTimeout(() => {
             clearInterval(particleInterval);
             ripScreen();
-          }, 1250);
-        }, 300);
+          }, 1000);
+        }, 50);
         
         function createFireParticle() {
           const particle = document.createElement('div');
@@ -659,7 +658,7 @@
           setTimeout(() => {
             topHalf.remove();
             bottomHalf.remove();
-          }, 1400);
+          }, 1000);
         }
       });
     </script>
