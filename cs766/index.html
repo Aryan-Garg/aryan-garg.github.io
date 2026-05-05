@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="gQIR">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="cs766_cqbp_pytorch">
+  <meta name="keywords" content="SPAD, Photon-limited Imaging, Diffusion Models, gQIR">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>gQIR</title>
+  <title>CS766</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DNREV2SQ0"></script>
@@ -82,8 +82,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"> </h1>
-          <h4 class="subtitle is-3">CS766 Final Project (Spring 26)</h4>
+          <h1 class="title is-1 publication-title">Fast, Vectorized Color-QBP Implementation and The Need for Priors</h1>
+          <h4 class="subtitle is-3">CS766 Final Project (Spring 2026)</h4>
           <div class="is-size-4 publication-authors">
             <span class="author-block">
               <a href="https://aryan-garg.github.io">Aryan Garg</a>,</span>
@@ -94,53 +94,35 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- Midterm Report -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2602.20417"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>ArXiv</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="./static/supplementary/gQIR_supp.pdf"
+                <a href="./static/supplementary/CS766_MidtermReport_agarg54_gump.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Supplementary</span>
+                  <span>Midterm Report</span>
                 </a>
               </span>
-              <!-- Video Link. -->
+              <!-- Presentation PDF -->
               <span class="link-block">
-                <a href="https://youtu.be/_ao7yBxgpec"
+                <a href="./static/supplementary/CS766_Presentation.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-youtube"></i>
+                      <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Presentation</span>
                 </a>
-              </span>
-              <span class="link-block">
-                <a href="https://huggingface.co/spaces/aRy4n/gQIR"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa"></i>
-                  </span>
-                  <span>🤗 Demo</span>
-                  </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/Aryan-Garg/gQIR"
+                <a href="https://github.com/wision-lab/qbp_pytorch"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
             </div>
 
@@ -154,12 +136,8 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/supplementary/HDRSplat_Supplementary_Movie.mp4"
-                type="video/mp4">
-      </video> -->
       <h2 class="subtitle has-text-centered">
-        g<span class="dnerf">QIR</span> is a general ISP for color SPADs that leverages a large-scale T2I prior, to work even under extreme scene motion!
+        Recovering high-fidelity, color HDR images from Single Photon Cameras using a fast, vectorized reimplementation of the traditional Color Quanta Burst Photography Algorithm.
       </h2>
     </div>
   </div>
@@ -171,53 +149,23 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+          <video poster="" id="mask" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
             <source src="./static/supplementary/mov1_gqir.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
             <source src="./static/supplementary/mov2_gqir.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
             <source src="./static/supplementary/mov3_gqir.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/supplementary/mov4_gqir.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/supplementary/mov5_gqir.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/supplementary/mov9_gqir.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/supplementary/mov10_gqir.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!-- <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
       </div>
     </div>
   </div>
@@ -232,168 +180,195 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Capturing high-quality images from only a few detected photons is a fundamental challenge in computational imaging. 
-            Single-photon avalanche diodes (SPADs) promise high-quality imaging in regimes where conventional cameras fail, but raw <emph>quanta frames</emph> contain only sparse, noisy, binary photon detections. 
-            Recovering a coherent image from a burst of such frames requires handling alignment, denoising, and demosaicing under noise statistics far outside those assumed by standard restoration pipelines or modern generative models. 
-            We present an approach that adapts large text-to-image latent diffusion models to the photon-limited domain of quanta burst imaging. 
-            Our method leverages the structural and semantic priors of internet-scale diffusion models while introducing mechanisms to handle Bernoulli photon statistics. 
-            By integrating latent-space restoration with burst-level spatio-temporal reasoning, our approach produces reconstructions that are both photometrically faithful and perceptually pleasing, even under extreme motion. 
-            We evaluate the method on synthetic benchmarks & new real-world datasets, including the <b>first color SPAD dataset</b> and a challenging <b>eXtreme Deformable (XD) video benchmark</b>. 
-            Across all settings, the approach substantially improves perceptual quality over classical & modern learning-based baselines, demonstrating the promise of adapting large generative priors to extreme photon-limited sensing.
+            We present a comprehensive reimplementation of color Quanta Burst Photography (cQBP) that is fast and vectorized. Written in PyTorch, our reimplementation achieves significant speedups while maintaining fidelity through pinned memory transfers, separate CUDA streams for parallelization, and concurrent data transfer and computation.
+            Then we evaluate this implementation on an ongoing ICCV Workshop challenge and also compare with the latest generative SPAD ISP while highlighting the pros and cons of using the generative method. We finally propose a direction that relies on generative priors and produces high dynamic range outputs.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!-- Motivation & Background -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Motivation &amp; Background</h2>
+          <div class="content has-text-justified">
+            <p>
+              The <b>impossible triangle of perception</b>—fast motion, high dynamic range, and low light—has long constrained CMOS imaging. A rapidly emerging sensing paradigm seeks to shatter these limits by imaging at the granularity of individual photons.
+            </p>
+            <p>
+              <b>Single-Photon Avalanche Diodes (SPADs)</b> capture photons one-by-one, enabling burst photography with extreme motion handling and wide dynamic range. However, raw quanta frames are binary, temporally misaligned, and bayer-mosaicked. Traditional reconstruction pipelines falter under Bernoulli photon statistics, and supervised learning approaches are inherently <b>biased toward high distortion</b> that violates natural image priors.
+            </p>
+            <p>
+              This creates a clear gap: physics-based ISPs lack perceptual realism, while generative models ignore the underlying photon physics. Our work bridges this divide by first delivering a production-grade, vectorized cQBP engine, then evaluating how far generative priors can carry us—and where they fundamentally break.
+            </p>
+          </div>
         </div>
       </div>
-    </div> -->
-    <!--/ Paper video. -->
+    </div>
+    <!--/ Motivation & Background -->
   </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
- 
       <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Extreme Motion Imaging Unlocked!</h2>
-          <h5>
-            gQIR enables high perceptually quality and plausibility under extreme motion and deformation!
-          </h5>
-          <p>Color-burst reconstructions from XD dataset (extreme motion and deforming scenes):</p>
-          <img src="./static/supplementary/color_burst_project_site.png"
-                 class="color-burst-comp-image"
-                 alt="Color Burst Reconstructions of High Speed Scenes."/>
-          <p>Monochrome comparisons with existing literature:</p>
-         <img src="./static/supplementary/burst_comp.png"
-                 class="burst-comp-image"
-                 alt="Monochrome Burst and comparisons with existing baselines."/>
-        </div>
-
-                <!-- <div class="item item-depth">
-                  <video id="depth" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/supplementary/NVS_depths/depth_SharpShadow_vitB.mp4"
-                        type="video/mp4">
-                  </video>
-                </div> -->
-      </div>
-    </div>
-          
-    <!--/ Visual Effects. -->
-    <div class="columns is-centered">
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Prompts For Semantic Editing of Photons</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our base generative prior, we can also use natural language to guide reconstruction in ambiguous regions.
-            </p>
-            <img src="./static/supplementary/prompt_cool_feature.png"
-                 class="tonemapping-image"
-                 alt="Prompt Guided Semantic Photon Editing."/>
+           <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Analysis &amp; Performance</h2>
+        
+        <div class="content has-text-justified">
+          <h4 class="title is-4">Timing &amp; Efficiency</h4>
+          <p>
+            Performance benchmarking showing inference time vs. output quality trade-offs.
+          </p>
+          <div class="content has-text-centered">
+            <img src="./static/supplementary/timing.png" alt="Timing results" style="max-width: 100%; height: auto;">
           </div>
 
+          <h4 class="title is-4">Hyperparameter Analysis</h4>
+          <p>
+            Sensitivity analysis of the sigma hyperparameter, showing the impact on reconstruction quality across different noise levels.
+          </p>
+          <div class="content has-text-centered">
+            <img src="./static/supplementary/sigma_hparam.png" alt="Sigma hyperparameter sensitivity" style="max-width: 100%; height: auto;">
+          </div>
         </div>
       </div>
     </div>
+    <!--/ Analysis & Performance -->
 
     <div class="columns is-centered">
       <div class="column">
           <div class="content">
-            <h2 class="title is-3">gQIR's Architecture</h2>
+            <h2 class="title is-3">Single Photon Challenge</h2>
             <p>
-              As shown, gQIR is built in 3 stages: a) <b>Simultaneous Pre-degradation Removal and SPAD-Alignment</b>, b) 
-              Adversarial distillation of SD2.1-zsnr-L5 for <b>perceptual enhancement</b>, and c) <b>Burst extension</b> for higher fidelity using our hybrid-3D FusionViT
+              Results on the Visionsim SPAD challenge demonstrating our method's effectiveness:
             </p>
             <div class="content has-text-centered">
-              <img src="./static/supplementary/pipeline.png" alt="model_architecture" class="interpolation-image">
+              <img src="./static/supplementary/visionsim_challenge.png" alt="Visionsim challenge results" style="max-width: 100%; height: auto;" class="interpolation-image">
             </div>
           </div>
         </div>
     </div>
-    <!--/ Matting. -->
 
-    <!-- Animation. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2> -->
-
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
+          <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Comparison with the latest generative SPAD ISP (gQIR)</h2>
+          <h4>
+            First on the static ablation scene: japanAlley scene:
+          </h4>
+          <p>Comparisons with existing literature:</p>
+          <div class="content has-text-centered">
+            <img src="./static/supplementary/comparison_figure.png"
+                 style="max-width: 100%; height: auto;"
+                 alt="Comparison figure showing gQIR reconstructions vs baselines."/>
           </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
+          <h4>Comparison on the single photon challenge competition</h4>
+          <div class="content has-text-centered">
+            <img src="./static/supplementary/prior_need_motivation.png"
+                 style="max-width: 100%; height: auto;"
+                 alt="Comparison figure showing gQIR reconstructions vs baselines."/>
           </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/> -->
-        <!--/ Interpolating. -->
+          <h5>gQIR enables high perceptually quality and plausibility under extreme motion and deformation!</h5>
 
-        <!-- Re-rendering. -->
-        
-        <!--/ Re-rendering. -->
-
-      <!-- </div>
-    </div> -->
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work.  NONE for gQIR -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Concurrent Work</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2405.15125">HDR-GS</a> also introduces HDR space 3D reconstructions.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2406.06216">LE3D</a> uses a color-MLP explicitly unlike ours to represent RAW color space.
-          </p>
         </div>
       </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
+    <!--/ Visual Effects. -->
+    
+         <!-- Limitations of gQIR -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Limitations of Generative SPAD ISPs</h2>
+          <div class="content has-text-justified">
+            <p>
+              While gQIR and similar generative methods deliver striking perceptual quality, they suffer from critical limitations rooted in their pretraining data:
+            </p>
+            <ul>
+              <li><b>LDR Pretraining Bias:</b> Models trained on low-dynamic-range (LDR) internet images cannot natively represent HDR photon statistics. Prompts like "Candid street portrait at night in Tokyo" or "Bright living room with sunlight" produce unrealistic tone mapping and washed-out highlights.</li>
+              <li><b>Physics-Agnostic Reconstruction:</b> Generative priors optimize for natural image manifolds, not photon counting statistics. This means reconstructions can violate physical constraints, producing plausible but photometrically incorrect outputs.</li>
+              <li><b>Lack of Uncertainty Calibration:</b> Unlike cQBP, which provides explicit error bounds, diffusion-based methods offer no quantification of reconstruction confidence in extreme photon-starved regimes.</li>
+            </ul>
+          </div>
+          
+          <h4 class="title is-4">Failure Cases: LDR Pretraining Bias in Action</h4>
+          <p>
+            The images below demonstrate how generative models are trained on low dynamic range scenarios, despite the the Auto-HDR mode captures in modern cameras:</p>
+          </p>
+          <div class="content has-text-centered">
+            <!-- This uses the same class as your working video carousel. index.js handles it automatically. -->
+            <div class="carousel">
+              <div class="item">
+                <img src="./static/supplementary/bad_0001.png" alt="Failure case 1" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0002.png" alt="Failure case 2" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0003.png" alt="Failure case 3" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0004.png" alt="Failure case 4" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0005.png" alt="Failure case 5" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0006.png" alt="Failure case 6" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0007.png" alt="Failure case 7" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0008.png" alt="Failure case 8" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0009.png" alt="Failure case 9" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="item">
+                <img src="./static/supplementary/bad_0010.png" alt="Failure case 10" style="max-width: 100%; height: auto;">
+              </div>
+            </div>
+          </div>
+          
+          <p class="is-size-6 has-text-grey has-text-centered">
+            <em>Generative models trained on LDR data fail to correctly represent extreme contrast scenarios, producing washed-out highlights and crushed shadows.</em>
+          </p>
+
+          <div class="content has-text-justified">
+            <p>
+              These limitations underscore the need for <b>HDR-aware generative models</b>—fine-tuned on tonemapped HDR data or adapted via low-rank techniques—to truly bridge the gap between perceptual quality and physical fidelity in SPAD imaging.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Limitations -->
+
+
+
+    <!-- Presentations -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Course Presentation</h2>
+        
+        <div class="content has-text-justified">
+
+          <h4 class="title is-4">Final Presentation</h4>
+          <p>Complete project walkthrough with final results and future directions.</p>
+          <div class="content has-text-centered">
+            <video controls style="max-width: 100%; height: auto;">
+              <source src="./static/supplementary/CS766_FinalPresentation_agarg54_gump.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Presentations -->
 
   </div>
 </section>
@@ -402,13 +377,25 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>
-      @InProceedings{garg_2026_gqir,
+        <pre><code>@InProceedings{garg_2026_gqir,
         author    = {Garg, Aryan and Ma, Sizhuo and  Gupta, Mohit},
         title     = {gQIR: Generative Quanta Image Reconstruction},
         booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
         month     = {June},
         year      = {2026},
+    }</code></pre>
+    <pre><code>@article{color-qbp,
+    author = {Ma, Sizhuo and Sundar, Varun and Mos, Paul and Bruschini, Claudio and Charbon, Edoardo and Gupta, Mohit},
+    title = {Seeing Photons in Color},
+    year = {2023},
+    issue_date = {August 2023},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3592438},
+    doi = {10.1145/3592438},
+    journal = {ACM Trans. Graph.},
+    keywords = {single-photon camera, single-photon avalanche diode, quanta image sensor, burst photography, 
+                color filter array, demosaicking, high dynamic range, high-speed imaging, low-light imaging}
     }</code></pre>
   </div>
 </section>
@@ -418,11 +405,11 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="https://arxiv.org/abs/2602.20417">
-        <i class="ai ai-arxiv"></i>
+         href="./static/supplementary/CS766_MidtermReport_agarg54_gump.pdf">
+        <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link"
-         href="./static/supplementary/gQIR_supp.pdf">
+         href="./static/supplementary/CS766_Presentation.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/Aryan-Garg/gQIR" class="external-link" disabled>
