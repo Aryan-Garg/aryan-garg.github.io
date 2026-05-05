@@ -278,13 +278,13 @@
                  style="max-width: 100%; height: auto;"
                  alt="Comparison figure showing gQIR reconstructions vs baselines."/>
           </div>
-          <h5>gQIR enables high perceptually quality and plausibility under extreme motion and deformation!</h5>
+          <h5>gQIR enables high perceptually quality and plausibility under motion and deformation!</h5>
 
         </div>
       </div>
     <!--/ Visual Effects. -->
     
-         <!-- Limitations of gQIR -->
+    <!-- Limitations of gQIR -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <div class="content">
@@ -302,11 +302,11 @@
           
           <h4 class="title is-4">Failure Cases: LDR Pretraining Bias in Action</h4>
           <p>
-            The images below demonstrate how generative models produce low dynamic range scenarios:</p>
+            The images below demonstrate how generative models produce low dynamic range scenarios:
           </p>
           <div class="content has-text-centered">
             <!-- This uses the same class as your working video carousel. index.js handles it automatically. -->
-            <div id="results-carousel" class="carousel results-carousel">
+            <div id="failure-carousel" class="carousel results-carousel">
               <div class="item">
                 <img src="./static/supplementary/bad_0001.png" alt="Failure case 1" style="max-width: 100%; height: auto;">
               </div>
@@ -328,11 +328,11 @@
             </div>
           </div>
           
-          <p class="is-size-6 has-text-grey has-text-centered">
+          <p class="is-size-6 has-text-grey has-text-centered mt-4">
             <em>Generative models trained on LDR data fail to correctly represent extreme contrast scenarios, producing washed-out highlights and crushed shadows.</em>
           </p>
 
-          <div class="content has-text-justified">
+          <div class="content has-text-justified mt-4">
             <p>
               These limitations underscore the need for <b>HDR-aware generative models</b>—fine-tuned on tonemapped HDR data or adapted via low-rank techniques—to truly bridge the gap between perceptual quality and physical fidelity in SPAD imaging.
             </p>
