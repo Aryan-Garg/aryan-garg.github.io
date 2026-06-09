@@ -1,663 +1,408 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta name="description" content="Author: Aryan Garg. Academic and personal webpage of Computer Vision and AI scientist.">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DNREV2SQ0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9DNREV2SQ0');
-    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Aryan Garg</title>
-    <meta name="author" content="Aryan Garg">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <meta name="google-site-verification" content="s9RiqmBmDg4hdYwG7LTmYP3-LajRrxAxn8T0-09Pg9Q" />
+    <meta name="description" content="Aryan Garg - Computer Vision and AI Researcher">
+    <title>Aryan Garg</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png">
   </head>
 
-  <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-      <div class="loading-content">
-        <div class="motorcycle-container" id="motorcycle">🏍️</div>
-        <div class="fire-trail" id="fire-trail"></div>
-        <div class="loading-text" id="loading-text">Loading...</div>
-      </div>
-    </div>
-    
-    <canvas id="matrix-canvas"></canvas>
-    
+  <body class="dark">
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle" title="Toggle light/dark mode">
+      <span class="theme-icon-sun">☀️</span>
+      <span class="theme-icon-moon">🌙</span>
+    </button>
+
     <div class="container">
-      <!-- Profile Section -->
-      <div class="terminal-window">
-        <div class="terminal-header">
-          <span class="terminal-title">aryan@portfolio:~</span>
-          <div class="terminal-buttons">
-            <button class="terminal-btn close"></button>
-            <button class="terminal-btn minimize"></button>
-            <button class="terminal-btn maximize"></button>
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <div class="nav-content">
+          <div class="nav-brand">
+            <a href="#top" class="nav-logo">🏍️</a>
+            <span class="nav-name">Aryan Garg</span>
           </div>
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link active" data-section="about">About</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+            <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+          </ul>
         </div>
-        <div class="terminal-content">
-          <div class="profile-section">
-            <div class="profile-text">
-              <h1>Aryan Garg</h1>
-              <p class="tagline">Simple solutions turn heads</p>
+      </nav>
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="images/face4.png" alt="Aryan Garg" class="profile-photo">
+          </div>
+          <div class="about-text">
+            <h1 class="section-title">Aryan Garg</h1>
+            <p class="tagline">CS PhD Student @ UW-Madison</p>
+            <div class="bio-text">
               <p>
-                I'm a CS PhD student at the University of Wisconsin-Madison,
-                advised by Professor <a href="https://wisionlab.com/people/mohit-gupta/">Mohit Gupta</a>. 
+                I'm a second year CS PhD student at the University of Wisconsin-Madison,
+                advised by Professor <a href="https://wisionlab.com/people/mohit-gupta/">Mohit Gupta</a>.
               </p>
               <p>
                 I have been fortunate to work with many brilliant professors and experts throughout my journey.
                 <a href="https://dblp.org/pid/81/10698.html">Prof. Renu Rameshan</a> ignited my interest in computer vision early during my Bachelor's at IIT Mandi which also led me to exploring generative modeling for outdoor lighting during my junior year with <a href="https://vision.gel.ulaval.ca/~jflalonde/">Prof. Jean-François Lalonde</a> and <a href="https://yannickhold.com/">Dr. Yannick Hold-Geoffroy</a>.
                 After graduating, I spent a wonderful year at IIT Madras getting closer to sensors alongside developing 3D reconstruction and generative facial video editing methods as a <a href="https://rbcdsai.iitm.ac.in/">Bosch</a> Research Fellow at the <a href="https://www.ee.iitm.ac.in/comp_photolab/">Computational Imaging Lab</a> directed by <a href="https://www.ee.iitm.ac.in/kmitra/">Prof. Kaushik Mitra</a>.
-                Interestingly, my vision sensors and generative interests got a human touch to them as I spent the summer of '24 at <a href="https://cbl.aalto.fi/">Computational Behaviour Lab</a>, advised by
+                Interestingly, my vision sensors and generative interests got a human touch to them as I spent the summer of '24 at the <a href="https://cbl.aalto.fi/">Computational Behaviour Lab</a>, advised by
                 <a href="https://users.aalto.fi/~oulasvir/">Prof. Antti Oulasvirta</a> and now Professor, <a href="https://yuejiang-nj.github.io/">Yue Jiang</a>.
               </p>
               <p>
-                Apart from <a href="#" class="nav-link" onclick="navigateTo('publications'); return false;">research</a>, I enjoy riding my motorcycle, baking and trekking. My previous trek (8th) was <a href="https://en.wikipedia.org/wiki/Sandakphu">Sandakphu-Phalut</a> in the Himalayas overlooking the majestic sleeping Buddha.
-                I also love to travel during the holidays to meet my close friends <a href="https://www.linkedin.com/in/julian-fabinc-31a006212/">Julian Fabinc</a> and Noemi Ippolito.
+                My research focuses on <strong>generative modeling for imaging, vision, and photography</strong>.
+                Currently, I'm working on HDR text-to-image models, semantically controllable dynamic range expansion, and lifting diffusion priors to long-horizon text-to-video generation.
               </p>
-              <div class="social-links">
-                <a href="mailto:aryangarg019@gmail.com" class="social-link">Email</a>
-                <a href="data/Aryan_Garg_Resume.pdf" class="social-link">Resume</a>
-                <a href="https://scholar.google.com/citations?user=z_VblYsAAAAJ&hl=en" class="social-link" target="_blank">Google Scholar</a>
-                <a href="https://github.com/Aryan-Garg/" class="social-link" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/aryan-garg019/" class="social-link" target="_blank">LinkedIn</a>
-              </div>
+              <p>
+                Apart from research, I enjoy riding my motorcycle, baking and trekking. My previous trek (8th) was Sandakphu-Phalut in the Himalayas overlooking the majestic sleeping Buddha. I also love to travel during the holidays to meet my close friends Julian Fabinc and Noemi Ippolito. 
+              </p>
             </div>
-            <img src="images/face4.png" alt="profile photo" class="profile-img">
+            <div class="social-links">
+              <a href="mailto:aryangarg019@gmail.com" class="social-btn">Email</a>
+              <a href="data/Aryan_Garg_Resume.pdf" class="social-btn">Resume</a>
+              <a href="https://scholar.google.com/citations?user=z_VblYsAAAAJ&hl=en" class="social-btn" target="_blank">Scholar</a>
+              <a href="https://github.com/Aryan-Garg/" class="social-btn" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/in/aryan-garg019/" class="social-btn" target="_blank">LinkedIn</a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Terminal Bar -->
-      <div class="terminal-bar">
-        <div class="terminal-input-wrapper">
-          <span class="terminal-prompt">➜</span>
-          <input type="text" id="terminal-input" placeholder="Type a command or click below..." autocomplete="off">
-        </div>
-        <div class="terminal-hints">
-          <span onclick="navigateTo('news')">news</span>
-          <span onclick="showResearchModal()">research</span>
-          <span onclick="navigateTo('publications')">publications</span>
-          <span onclick="navigateTo('services')">services</span>
-        </div>
-        <div class="snail-mascot" id="snail" onclick="toggleSnailSpeech()" title="Click for wisdom!">🐌</div>
-        <div class="snail-speech" id="snail-speech"></div>
-      </div>
+      </section>
 
       <!-- News Section -->
-      <div class="terminal-window section" id="news" style="display:none;">
-        <div class="terminal-header">
-          <span class="terminal-title">aryan@portfolio:~/news --sort=date</span>
-          <div class="terminal-buttons">
-            <button class="terminal-btn close" onclick="hideSection('news')"></button>
-            <button class="terminal-btn minimize"></button>
-            <button class="terminal-btn maximize"></button>
+      <section id="news" class="section">
+        <h2 class="section-title">Recent News</h2>
+        <ul class="news-list">
+          <li><span class="news-date">May 2026</span> Accepted into the first FLUX Creators cohort from Black Forest Labs</li>
+          <li><span class="news-date">Feb 2026</span> One first-author CVPR paper accepted!</li>
+          <li><span class="news-date">Feb 2025</span> Won the CS department UW-Madison Fellowship Award</li>
+          <li><span class="news-date">Feb 2025</span> North America finalist for Qualcomm Innovation Fellowship, 2025</li>
+          <li><span class="news-date">Aug 2024</span> Joined UW-Madison as a PhD student!</li>
+        </ul>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+      <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          
+          <!-- gQIR Project -->
+          <div class="project-card">
+            <div class="project-media">
+              <video autoplay muted loop playsinline poster="images/gqir_4.png">
+                <source src="gqir/static/supplementary/mov1_gqir.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">CVPR 2026 Highlight</span>
+              <h3 class="project-title">gQIR: Generative Quanta Image Reconstruction</h3>
+              <p class="project-desc">
+                Generative prior for photon-counting neural ISPs under extreme motion.
+                Recovers high-fidelity HDR images from single photon cameras.
+              </p>
+              <div class="project-links">
+                <a href="https://arxiv.org/abs/2602.20417" class="project-link" target="_blank">Paper</a>
+                <a href="https://aryan-garg.github.io/gqir" class="project-link" target="_blank">Project Page</a>
+                <a href="https://github.com/Aryan-Garg/gQIR" class="project-link" target="_blank">Code</a>
+              </div>
+            </div>
           </div>
+
+          <!-- HDRSplat Project -->
+          <div class="project-card">
+            <div class="project-media">
+              <video autoplay muted loop playsinline poster="hdrsplat/static/supplementary/Exposure_Control.png">
+                <source src="hdrsplat/static/supplementary/HDRSplat_Supplementary_Movie.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">BMVC 2024</span>
+              <h3 class="project-title">HDRSplat: Gaussian Splatting for High Dynamic Range</h3>
+              <p class="project-desc">
+                High Dynamic Range 3D Gaussian Splatting from raw images.
+                Achieves stunning night-time 3D reconstruction with HDR capabilities.
+              </p>
+              <div class="project-links">
+                <a href="https://aryan-garg.github.io/hdrsplat" class="project-link" target="_blank">Project Page</a>
+                <a href="https://arxiv.org/abs/2407.16503" class="project-link" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- IP-FaceDiff -->
+          <div class="project-card">
+            <div class="project-media">
+              <video autoplay muted loop playsinline poster="images/ipdiff2.png">
+                <source src="images/wacv_paper.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">WACV-W 2025</span>
+              <h3 class="project-title">IP-FaceDiff: Identity-Preserving Facial Video Editing</h3>
+              <p class="project-desc">
+                Identity-preserving facial video editing with diffusion models.
+                Maintains identity while enabling creative video manipulation.
+              </p>
+              <div class="project-links">
+                <a href="https://arxiv.org/abs/2501.07530" class="project-link" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="terminal-content">
-          <h2>News</h2>
-          <ul class="news-list">
-            <li><span class="news-date">May 2026</span> Accepted into the first FLUX Creators cohort from Black Forest Labs </li>
-            <li><span class="news-date">Feb 2026</span> One first-author CVPR paper accepted!</li>
-            <li><span class="news-date">Feb 2025</span> Won the CS department UW-Madison Fellowship Award</li>
-            <li><span class="news-date">Feb 2025</span> Became a North America finalist for Qualcomm Innovation Fellowship, 2025</li>
-            <li><span class="news-date">Jan 2025</span> Became a Research Assistant at the WisionLab, UW-Madison</li>
-            <li><span class="news-date">Aug 2024</span> Joined UW-Madison as a PhD student!</li>
-            <li><span class="news-date">Jun 2024</span> Interning this summer with Prof. Antti Oulasvirta at Aalto, Finland.</li>
-            <li><span class="news-date">May 2024</span> One first authored paper accepted at ICCP!</li>
-            <li><span class="news-date">Apr 2024</span> Accepted to PhD programmes at UW Madison, Rice University and KAUST.</li>
-            <li><span class="news-date">Mar 2024</span> Two first-authored papers accepted at ICLR, both as oral presentations!</li>
-            <li><span class="news-date">Nov 2023</span> Awarded the Post-Bacc. Bosch AI Fellowship (RBCDSAI, IIT Madras)</li>
-            <li><span class="news-date">Jun 2023</span> Graduated from IIT Mandi with Bachelors in CS.</li>
-            <li><span class="news-date">Jun 2022</span> Won the MITACS Award. Interning this summer with Prof. Jean Francois Lalonde at ULaval, Canada.</li>
-          </ul>
-        </div>
-      </div>
+      </section>
 
       <!-- Publications Section -->
-      <div class="terminal-window section" id="publications">
-        <div class="terminal-header">
-          <span class="terminal-title">aryan@portfolio:~/publications/{CVPR, SIGGRAPH, ICLR, ToG, ICCP, BMVC, WACV}</span>
-          <div class="terminal-buttons">
-            <button class="terminal-btn close" onclick="hideSection('publications')"></button>
-            <button class="terminal-btn minimize"></button>
-            <button class="terminal-btn maximize"></button>
+      <section id="publications" class="section">
+        <h2 class="section-title">Publications</h2>
+        
+        <div class="publication">
+          <div class="publication-header" onclick="togglePublication(this.parentElement)">
+            <div>
+              <h3 class="publication-title">gQIR: Generative Quanta Image Reconstruction</h3>
+              <p class="publication-authors"><strong>Aryan Garg</strong>, Sizhuo Ma, Mohit Gupta</p>
+              <p class="publication-venue">CVPR 2026 (Highlight; Top 10%)</p>
+            </div>
+            <span class="expand-icon">▼</span>
           </div>
-        </div>
-        <div class="terminal-content">
-          <h2>Publications</h2>
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">gQIR: Generative Quanta Image Reconstruction</div>
-                <div class="publication-authors"><strong>Aryan Garg</strong>, Sizhuo Ma, Mohit Gupta</div>
-                <div class="publication-venue">CVPR 2026 (Highlight; Top 10%)</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>Generative prior for photon-counting neural ISPs under extreme motion.</p>
-              <div class="publication-links">
-                <a href="https://arxiv.org/abs/2602.20417" class="pub-link" target="_blank">arXiv</a>
-                <a href="https://aryan-garg.github.io/gqir" class="pub-link" target="_blank">Project Page</a>
-                <a href="https://github.com/Aryan-Garg/gQIR" class="pub-link" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">Radiance Fields from Photons</div>
-                <div class="publication-authors">Sacha Jungerman, <strong>Aryan Garg</strong>, Mohit Gupta</div>
-                <div class="publication-venue">Transactions on Graphics, 2025 & SIGGRAPH, 2026</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>NeRF and 3D Gaussian Splatting with Photons</p>
-              <div class="publication-links">
-                <a href="https://doi.org/10.1145/3770578" class="pub-link" target="_blank">ACM DOI</a>
-                <a href="https://arxiv.org/abs/2407.09386" class="pub-link" target="_blank">arXiv</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">Controllable GUI Exploration</div>
-                <div class="publication-authors"><strong>Aryan Garg</strong>, Yue Jiang, Antti Oulasvirta</div>
-                <div class="publication-venue">Preprint, 2025</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>Diffusion for automatic GUI designing & ideation</p>
-              <div class="publication-links">
-                <a href="https://arxiv.org/abs/2502.03330" class="pub-link" target="_blank">arXiv</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">IP-FaceDiff: Identity-Preserving Facial Video Editing with Diffusion</div>
-                <div class="publication-authors">Tharun Anand, <strong>Aryan Garg</strong>, Kaushik Mitra</div>
-                <div class="publication-venue">WACV-W, 2025</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>Identity-Preserving Facial Video Editing with Diffusion</p>
-              <div class="publication-links">
-                <a href="https://arxiv.org/abs/2501.07530" class="pub-link" target="_blank">arXiv</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">HDRSplat: Gaussian Splatting for High Dynamic Range 3D Scene Reconstruction from Raw Images</div>
-                <div class="publication-authors">Shreyas Singh*, <strong>Aryan Garg*</strong>, Kaushik Mitra</div>
-                <div class="publication-venue">BMVC, 2024</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>High Dynamic Range 3D Gaussian Splatting At Night</p>
-              <div class="publication-links">
-                <a href="https://aryan-garg.github.io/hdrsplat" class="pub-link" target="_blank">Project Page</a>
-                <a href="https://arxiv.org/abs/2407.16503" class="pub-link" target="_blank">arXiv</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">Stereo-Knowledge Distillation from dpMV to Dual Pixels for Light Field Video Reconstruction</div>
-                <div class="publication-authors"><strong>Aryan Garg</strong>, Raghav Mallampali, Akshat Joshi, Shrisudhan Govindarajan, Kaushik Mitra</div>
-                <div class="publication-venue">ICCP, 2024</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>Stereo Knowledge Distillation for dp-disparity estimation, dpMV dataset, and LFVR.</p>
-              <div class="publication-links">
-                <a href="https://github.com/Aryan-Garg/dp-LFVR" class="pub-link" target="_blank">GitHub</a>
-                <a href="http://arxiv.org/abs/2405.11823" class="pub-link" target="_blank">arXiv</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">Parameter and Data Efficient Spectral Style DCGAN</div>
-                <div class="publication-authors"><strong>Aryan Garg</strong></div>
-                <div class="publication-venue">ICLR Tiny Paper, 2024 (Oral Presentation)</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>Unconditional face generation at the speed and size of DCGAN using a relatively tiny training dataset (~4000). Convergence and higher fidelity over StyleGAN are achieved using a spectrally normalized discriminator and a tiny generator within 20 minutes on a commercial, free cloud GPU.</p>
-              <div class="publication-links">
-                <a href="https://github.com/Aryan-Garg/StyleDCGAN" class="pub-link" target="_blank">GitHub</a>
-                <a href="https://arxiv.org/abs/2404.00597" class="pub-link" target="_blank">arXiv</a>
-                <a href="https://openreview.net/forum?id=JQlfTmlHNz" class="pub-link" target="_blank">OpenReview</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">G-PECNet: Towards a Generalizable Pedestrian Trajectory Prediction System</div>
-                <div class="publication-authors"><strong>Aryan Garg</strong>, Renu Rameshan</div>
-                <div class="publication-venue">ICLR Tiny Paper, 2024 (Oral Presentation)</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>Synthetic dataset generation and sinusoidal activations lead to a winning solution over the final displacement error.</p>
-              <div class="publication-links">
-                <a href="https://github.com/Aryan-Garg/GPECNet" class="pub-link" target="_blank">GitHub</a>
-                <a href="https://arxiv.org/abs/2210.09846" class="pub-link" target="_blank">arXiv</a>
-                <a href="https://openreview.net/forum?id=wSWk1sNK0m" class="pub-link" target="_blank">OpenReview</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">Re-envisioning Sky Models</div>
-                <div class="publication-authors">Ian J. Maquignaz, Lucas Valença, <strong>Aryan Garg</strong>, Yannick Hold Geoffroy, Julien Philip, Jean Francois Lalonde</div>
-                <div class="publication-venue">Semaine numériQC, 2023 (3rd Best Presentation Award)</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>SkyNet for user-controlled generation of skies incorporating the versatility of parametric models and realism from deep generative networks.</p>
-            </div>
-          </div>
-
-          <div class="publication" onclick="togglePublication(this)">
-            <div class="publication-header">
-              <div>
-                <div class="publication-title">DeepSky</div>
-                <div class="publication-authors">Ian J. Maquignaz, <strong>Aryan Garg</strong>, Yannick Hold Geoffroy, Julien Philip, Jean Francois Lalonde</div>
-                <div class="publication-venue">Symposium IA Montréal, 2022</div>
-              </div>
-              <span class="expand-icon">▼</span>
-            </div>
-            <div class="publication-details">
-              <p>DeepSky: Learning to generate photorealistic skies per user-controlled positioning of solar and atmospheric components</p>
-              <div class="publication-links">
-                <a href="https://drive.google.com/file/d/1bRuSX9Tgk24H932XWmxdcTJv_xVhzLG2/view?usp=sharing" class="pub-link" target="_blank">Poster</a>
-                <a href="https://drive.google.com/file/d/1dGUFPKnwqeVi_3RQYjVvPWgfdHvOPtwQ/view?usp=sharing" class="pub-link" target="_blank">Abstract</a>
-              </div>
+          <div class="publication-details">
+            <p>Generative prior for photon-counting neural ISPs under extreme motion.</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2602.20417" class="pub-link" target="_blank">arXiv</a>
+              <a href="https://aryan-garg.github.io/gqir" class="pub-link" target="_blank">Project</a>
+              <a href="https://github.com/Aryan-Garg/gQIR" class="pub-link" target="_blank">Code</a>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Academic Services Section -->
-      <div class="terminal-window section" id="services" style="display:none;">
-        <div class="terminal-header">
-          <span class="terminal-title">aryan@portfolio:~/services</span>
-          <div class="terminal-buttons">
-            <button class="terminal-btn close" onclick="hideSection('services')"></button>
-            <button class="terminal-btn minimize"></button>
-            <button class="terminal-btn maximize"></button>
+        <div class="publication">
+          <div class="publication-header" onclick="togglePublication(this.parentElement)">
+            <div>
+              <h3 class="publication-title">Radiance Fields from Photons</h3>
+              <p class="publication-authors">Sacha Jungerman, <strong>Aryan Garg</strong>, Mohit Gupta</p>
+              <p class="publication-venue">ToG 2025 & SIGGRAPH 2026</p>
+            </div>
+            <span class="expand-icon">▼</span>
+          </div>
+          <div class="publication-details">
+            <p>NeRF and 3D Gaussian Splatting with Photons</p>
+            <div class="publication-links">
+              <a href="https://doi.org/10.1145/3770578" class="pub-link" target="_blank">ACM DOI</a>
+              <a href="https://arxiv.org/abs/2407.09386" class="pub-link" target="_blank">arXiv</a>
+            </div>
           </div>
         </div>
-        <div class="terminal-content">
-          <h2>Academic Services</h2>
-          <h3>Reviewer For:</h3>
-          <ul class="news-list">
-            <li>CVPR 2026</li>
-            <li>ECCV 2026</li>
-            <li>ICLR 2024, 2025, 2026</li>
-            <li>CVPR-W: AI for Content Creation, AI4CC 2024</li>
-            <li>(ICVGIP) 14th Indian Conference on Computer Vision, Graphics and Image Processing, 2023</li>
-          </ul>
+
+        <div class="publication">
+          <div class="publication-header" onclick="togglePublication(this.parentElement)">
+            <div>
+              <h3 class="publication-title">Controllable GUI Exploration</h3>
+              <p class="publication-authors"><strong>Aryan Garg</strong>, Yue Jiang, Antti Oulasvirta</p>
+              <p class="publication-venue">Preprint, 2025</p>
+            </div>
+            <span class="expand-icon">▼</span>
+          </div>
+          <div class="publication-details">
+            <p>Diffusion for automatic GUI designing & ideation</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2502.03330" class="pub-link" target="_blank">arXiv</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="publication-header" onclick="togglePublication(this.parentElement)">
+            <div>
+              <h3 class="publication-title">IP-FaceDiff: Identity-Preserving Facial Video Editing with Diffusion</h3>
+              <p class="publication-authors">Tharun Anand, <strong>Aryan Garg</strong>, Kaushik Mitra</p>
+              <p class="publication-venue">WACV-W, 2025</p>
+            </div>
+            <span class="expand-icon">▼</span>
+          </div>
+          <div class="publication-details">
+            <p>Identity-Preserving Facial Video Editing with Diffusion</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2501.07530" class="pub-link" target="_blank">arXiv</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="publication-header" onclick="togglePublication(this.parentElement)">
+            <div>
+              <h3 class="publication-title">HDRSplat: Gaussian Splatting for High Dynamic Range 3D Scene Reconstruction</h3>
+              <p class="publication-authors">Shreyas Singh*, <strong>Aryan Garg*</strong>, Kaushik Mitra</p>
+              <p class="publication-venue">BMVC, 2024</p>
+            </div>
+            <span class="expand-icon">▼</span>
+          </div>
+          <div class="publication-details">
+            <p>High Dynamic Range 3D Gaussian Splatting At Night</p>
+            <div class="publication-links">
+              <a href="https://aryan-garg.github.io/hdrsplat" class="pub-link" target="_blank">Project</a>
+              <a href="https://arxiv.org/abs/2407.16503" class="pub-link" target="_blank">arXiv</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="publication-header" onclick="togglePublication(this.parentElement)">
+            <div>
+              <h3 class="publication-title">Stereo-Knowledge Distillation from dpMV to Dual Pixels for Light Field Video Reconstruction</h3>
+              <p class="publication-authors"><strong>Aryan Garg</strong>, Raghav Mallampali, Akshat Joshi, Shrisudhan Govindarajan, Kaushik Mitra</p>
+              <p class="publication-venue">ICCP, 2024</p>
+            </div>
+            <span class="expand-icon">▼</span>
+          </div>
+          <div class="publication-details">
+            <p>Stereo Knowledge Distillation for dp-disparity estimation, dpMV dataset, and LFVR.</p>
+            <div class="publication-links">
+              <a href="https://github.com/Aryan-Garg/dp-LFVR" class="pub-link" target="_blank">GitHub</a>
+              <a href="http://arxiv.org/abs/2405.11823" class="pub-link" target="_blank">arXiv</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="publication-header" onclick="togglePublication(this.parentElement)">
+            <div>
+              <h3 class="publication-title">Parameter and Data Efficient Spectral Style DCGAN</h3>
+              <p class="publication-authors"><strong>Aryan Garg</strong></p>
+              <p class="publication-venue">ICLR Tiny Paper, 2024 (Oral Presentation)</p>
+            </div>
+            <span class="expand-icon">▼</span>
+          </div>
+          <div class="publication-details">
+            <p>Unconditional face generation at the speed and size of DCGAN using a relatively tiny training dataset (~4000).</p>
+            <div class="publication-links">
+              <a href="https://github.com/Aryan-Garg/StyleDCGAN" class="pub-link" target="_blank">GitHub</a>
+              <a href="https://arxiv.org/abs/2404.00597" class="pub-link" target="_blank">arXiv</a>
+              <a href="https://openreview.net/forum?id=JQlfTmlHNz" class="pub-link" target="_blank">OpenReview</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="publication-header" onclick="togglePublication(this.parentElement)">
+            <div>
+              <h3 class="publication-title">G-PECNet: Towards a Generalizable Pedestrian Trajectory Prediction System</h3>
+              <p class="publication-authors"><strong>Aryan Garg</strong>, Renu Rameshan</p>
+              <p class="publication-venue">ICLR Tiny Paper, 2024 (Oral Presentation)</p>
+            </div>
+            <span class="expand-icon">▼</span>
+          </div>
+          <div class="publication-details">
+            <p>Synthetic dataset generation and sinusoidal activations lead to a winning solution over the final displacement error.</p>
+            <div class="publication-links">
+              <a href="https://github.com/Aryan-Garg/GPECNet" class="pub-link" target="_blank">GitHub</a>
+              <a href="https://arxiv.org/abs/2210.09846" class="pub-link" target="_blank">arXiv</a>
+              <a href="https://openreview.net/forum?id=wSWk1sNK0m" class="pub-link" target="_blank">OpenReview</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section">
+        <h2 class="section-title">Academic Services</h2>
+        
+        <div class="services-grid">
+          <div class="services-card">
+            <h3>Reviewer For</h3>
+            <ul class="services-list">
+              <li>CVPR 2026</li>
+              <li>ECCV 2026</li>
+              <li>ICLR 2024, 2025, 2026</li>
+              <li>CVPR-W: AI for Content Creation, AI4CC 2024</li>
+              <li>ICVGIP 2023</li>
+            </ul>
+          </div>
           
-          <h3>Teaching Assistant</h3>
-          <ul class="news-list">
-            <li>CS639.1 - Data Management for Data Science (Prof. Meenakshi Syamkumar) - Fall '24, UW-Madison</li>
-            <li>EE5719 - Deep Learning for Imaging (Prof. Kaushik Mitra) - Fall '23, IIT Madras (NPTEL)</li>
-            <li>CS208 - Mathematical Foundations of Computer Science (Prof. Samar Agnihotri) - Fall '21, IIT Mandi</li>
-            <li>EE522 - Matrix Theory for Engineers (Prof. Renu Rameshan) - Fall '21, IIT Mandi</li>
-          </ul>
+          <div class="services-card">
+            <h3>Teaching Assistant</h3>
+            <ul class="services-list">
+              <li>CS639.1 - Data Management (UW-Madison, Fall '24)</li>
+              <li>EE5719 - Deep Learning for Imaging (IIT Madras, Fall '23)</li>
+              <li>CS208 - Mathematical Foundations (IIT Mandi, Fall '21)</li>
+              <li>EE522 - Matrix Theory (IIT Mandi, Fall '21)</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2026 Aryan Garg. Built with ❤️</p>
+      </footer>
     </div>
 
-    <!-- Research Modal -->
-    <div class="modal-overlay" id="research-modal" onclick="closeResearchModal(event)">
-      <div class="modal">
-        <button class="modal-close" onclick="closeResearchModal()">×</button>
-        <h2 style="font-size: 26px; font-weight: 600; color: #6366f1; margin-bottom: 25px; display: flex; align-items: center; gap: 12px;">
-          <span style="width: 4px; height: 24px; background: linear-gradient(180deg, #6366f1, #8b5cf6); border-radius: 2px; display: inline-block;"></span>
-          Research Interests
-        </h2>
-        <div class="code-block">
-          <span class="keyword">def</span> <span class="function">research_interests</span>():<br>
-          &nbsp;&nbsp;<span class="keyword">return</span> {<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"primary"</span>: <span class="string">"Generative modeling for Imaging, Vision and Photography (IVP)"</span>,<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"focus"</span>: <span class="string">"Text-to-Image, Text-to-Video, Image Editing"</span>,<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Currently on my plate"</span>: [<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"High Dynamic Range T2I models"</span>,<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Semantically Controllable DR Expansion of HDR T2I above"</span>,<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Lifting Flux Klein to long horizon text-to-video prior"</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;]<br>
-          &nbsp;&nbsp;}
-        </div>
-        <p style="margin-top: 20px; color: #475569; font-size: 14px;">
-          Generative modeling for imaging, vision and photography (IVP).
-        </p>
-      </div>
-    </div>
-
-    <!-- Scripts -->
     <script>
-      // Matrix Rain Animation - Green Japanese characters on dark background
-      const canvas = document.getElementById('matrix-canvas');
-      const ctx = canvas.getContext('2d');
+      // Theme Toggle
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
       
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      
-      const chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEF{}[]<>/\\|';
-      const fontSize = 14;
-      const columns = canvas.width / fontSize;
-      const drops = [];
-      
-      for (let i = 0; i < columns; i++) {
-        drops[i] = Math.random() * -100;
+      // Check for saved theme preference or use system preference
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        body.className = savedTheme;
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        body.className = 'light';
       }
       
-      function drawMatrix() {
-        ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        
-        ctx.fillStyle = '#0F0';
-        ctx.font = fontSize + 'px monospace';
-        
-        for (let i = 0; i < drops.length; i++) {
-          const text = chars.charAt(Math.floor(Math.random() * chars.length));
-          const brightness = Math.random();
-          if (brightness > 0.98) {
-            ctx.fillStyle = '#00ff41';
-          } else if (brightness > 0.9) {
-            ctx.fillStyle = '#00cc33';
-          } else {
-            ctx.fillStyle = '#009922';
-          }
-          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-          
-          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-            drops[i] = 0;
-          }
-          drops[i]++;
-        }
-      }
-      
-      setInterval(drawMatrix, 50);
-      
-      window.addEventListener('resize', () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      });
-      
-      // Cursor Trail Effect
-      const trails = [];
-      const maxTrails = 15;
-      
-      document.addEventListener('mousemove', (e) => {
-        const trail = document.createElement('div');
-        trail.className = 'cursor-trail';
-        trail.style.left = e.clientX - 6 + 'px';
-        trail.style.top = e.clientY - 6 + 'px';
-        document.body.appendChild(trail);
-        trails.push(trail);
-        
-        if (trails.length > maxTrails) {
-          const oldTrail = trails.shift();
-          oldTrail.remove();
-        }
-        
-        setTimeout(() => {
-          trail.style.opacity = '0';
-          setTimeout(() => trail.remove(), 250);
-        }, 100);
-      });
-      
-      // Terminal Input Handler
-      const terminalInput = document.getElementById('terminal-input');
-      const commands = {
-        'news': () => navigateTo('news'),
-        'research': () => showResearchModal(),
-        'publications': () => navigateTo('publications'),
-        'pubs': () => navigateTo('publications'),
-        'services': () => navigateTo('services'),
-        'help': () => alert('Commands: news, research, publications (pubs), services')
-      };
-      
-      terminalInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-          const cmd = terminalInput.value.toLowerCase().trim();
-          if (commands[cmd]) {
-            commands[cmd]();
-          }
-          terminalInput.value = '';
+      themeToggle.addEventListener('click', () => {
+        if (body.className === 'dark') {
+          body.className = 'light';
+          localStorage.setItem('theme', 'light');
+        } else {
+          body.className = 'dark';
+          localStorage.setItem('theme', 'dark');
         }
       });
+
+      // Smooth scroll for navigation
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href').substring(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+          // Update active link
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        });
+      });
+
+      // Highlight active section on scroll
+      const sections = document.querySelectorAll('.section');
+      const navLinks = document.querySelectorAll('.nav-link');
       
-      function navigateTo(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.style.display = 'block';
-          setTimeout(() => {
-            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }, 100);
-        }
-      }
-      
-      function hideSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.style.display = 'none';
-        }
-      }
-      
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('data-section') === current) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Publication accordion
       function togglePublication(element) {
         element.classList.toggle('expanded');
       }
-      
-      function showResearchModal() {
-        document.getElementById('research-modal').classList.add('active');
-      }
-      
-      function closeResearchModal(event) {
-        if (!event || event.target === document.getElementById('research-modal') || event.target.classList.contains('modal-close')) {
-          document.getElementById('research-modal').classList.remove('active');
-        }
-      }
-      
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          closeResearchModal();
-        }
-      });
-      
-      // Snail Mascot with Quotes
-      const snailQuotes = [
-        // Classic catchphrases
-        "\"I'm not lazy, I'm just on energy-saving mode.\" 🎵",
-        "\"It's me, the Snail from Windows 95!\" 🍄",
-        "\"The cake is a lie.\" 🍰",
-       
-        // Music & pop culture
-        "\"Never gonna give you up, never gonna let you down.\" 🎵",
-        "\"I see a little silhouetto of a man...\" 🎭 — Queen",
-        "\"Is this the real life? Is this just fantasy?\" 🎸",
-        
-        // Tech humor
-        "\"There's no place like 127.0.0.1\" 💻",
-        "\"Have you tried turning it off and on again?\" 🔄",
-        "\"In a world of algorithms, be a human.\" 🤖",
-        "\"I told my computer I needed a break... now it won't stop sending me Kit-Kat ads.\" 🍫",
-        
-        // Clean jokes
-        "\"Why do programmers prefer dark mode? Because light attracts bugs.\" 🐛",
-        "\"I'd tell you a UDP joke, but you might not get it.\" 📡",
-        "\"A SQL query walks into a bar, sees two tables, and asks... 'Can I JOIN you?'\" 🍻",
-        "\"Why was the JavaScript developer sad? Because he didn't Node how to Express himself.\" 😢",
-        
-        // Nostalgic
-        "\"Dial-up sounds were the original lo-fi beats.\" 📞🎶",
-        "\"Back in my day, we had to wait 10 minutes for one image to load.\" 🖼️",
-        "\"Remember when 'surfing the web' meant something different?\" 🏄",
-        "\"404: Snail brain Not found.\" ⏰",
-        
-        // Inspirational
-        "\"The best way to predict the future is to invent it.\" — Alan Kay",
-        "\"Stay hungry, stay foolish.\" — Steve Jobs",
-        "\"Code is poetry.\" 💝",
-        "\"First solve it, then code it.\" 🧩",
-        
-        // AI/ML humor
-        "\"My neural network has 365 parameters... one for each day I don't know what I'm doing.\" 🧠",
-        "\"I trained a model to predict my productivity. It always outputs NaN.\" 📊",
-        "\"I'm not procrastinating, I'm doing exploratory data analysis on life.\" 🔍",
-        
-        // Vision/graphics
-        "\"I'd explain Fourier transforms to you, but it would take infinite series.\" 🌊",
-        "\"Pixels don't lie, but they do compress.\" 📸",
-        "\"Computer vision: because reality is overrated.\" 👁️"
-      ];
-      
-      let lastQuoteIndex = -1;
-      
-      function getRandomQuote() {
-        let index;
-        do {
-          index = Math.floor(Math.random() * snailQuotes.length);
-        } while (index === lastQuoteIndex);
-        lastQuoteIndex = index;
-        return snailQuotes[index];
-      }
-      
-      function toggleSnailSpeech() {
-        const speech = document.getElementById('snail-speech');
-        if (speech.classList.contains('visible')) {
-          speech.classList.remove('visible');
-        } else {
-          speech.textContent = getRandomQuote();
-          speech.classList.add('visible');
-          
-          // Auto-hide after 8 seconds
-          setTimeout(() => {
-            speech.classList.remove('visible');
-          }, 8000);
-        }
-      }
-      
-      // Show snail quote on page load after 3 seconds
-      setTimeout(() => {
-        const speech = document.getElementById('snail-speech');
-        speech.textContent = getRandomQuote();
-        speech.classList.add('visible');
-        setTimeout(() => {
-          speech.classList.remove('visible');
-        }, 6500);
-      }, 3500);
-      
-      // Motorcycle Loading Screen Animation
-      window.addEventListener('load', () => {
-        const motorcycle = document.getElementById('motorcycle');
-        const fireTrail = document.getElementById('fire-trail');
-        const loadingText = document.getElementById('loading-text');
-        const loadingScreen = document.getElementById('loading-screen');
-        
-        // Start motorcycle animation
-        setTimeout(() => {
-          motorcycle.classList.add('animate');
-          fireTrail.classList.add('animate');
-          loadingText.classList.add('animate');
-          
-          // Create fire particles along the trail
-          let particleCount = 0;
-          const particleInterval = setInterval(() => {
-            if (particleCount < 35) {
-              createFireParticle();
-              particleCount++;
-            }
-          }, 60);
-          
-          // When motorcycle passes center, trigger rip
-          setTimeout(() => {
-            clearInterval(particleInterval);
-            ripScreen();
-          }, 1000);
-        }, 50);
-        
-        function createFireParticle() {
-          const particle = document.createElement('div');
-          particle.className = 'fire-particle';
-          const randomX = Math.random() * window.innerWidth;
-          const randomY = (window.innerHeight / 2) + (Math.random() - 0.5) * 50;
-          particle.style.left = randomX + 'px';
-          particle.style.top = randomY + 'px';
-          document.body.appendChild(particle);
-          
-          setTimeout(() => particle.remove(), 500);
-        }
-        
-        function ripScreen() {
-          // Hide the original loading screen first
-          loadingScreen.style.display = 'none';
-          
-          // Create top half
-          const topHalf = document.createElement('div');
-          topHalf.className = 'rip-half rip-half-top';
-          document.body.appendChild(topHalf);
-          
-          // Create bottom half
-          const bottomHalf = document.createElement('div');
-          bottomHalf.className = 'rip-half rip-half-bottom';
-          document.body.appendChild(bottomHalf);
-          
-          // Trigger the rip animation
-          requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-              topHalf.classList.add('rip-open');
-              bottomHalf.classList.add('rip-open');
-            });
-          });
-          
-          // Remove halves after animation completes
-          setTimeout(() => {
-            topHalf.remove();
-            bottomHalf.remove();
-          }, 1000);
-        }
-      });
     </script>
   </body>
 </html>
