@@ -283,7 +283,7 @@ body.light .theme-icon-moon {
 
 .tagline {
   color: var(--text-muted);
-  font-size: 8px;
+  font-size: 10px;
   margin-bottom: 18px;
   font-family: 'Fira Code', monospace;
 }
